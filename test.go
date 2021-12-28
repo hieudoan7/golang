@@ -3,7 +3,14 @@ import (
 	"fmt"
 )
 
+type student struct {
+	name string
+	age uint32
+}
+
 func main() {
-	var x int
-	fmt.Println(x)
+	var a *student
+	fmt.Println(a) //nil
+	b := &student{}
+	fmt.Println(b)  //&{ 0}
 }
